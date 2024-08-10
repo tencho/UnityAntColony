@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - AntContainer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: GameSky
+    uniqueID: 222220879
+    locked: 0
+  - name: GameGrass
+    uniqueID: 1990353067
+    locked: 0
+  - name: GameDirt
+    uniqueID: 858275699
+    locked: 0
+  - name: GameColony
+    uniqueID: 1416224379
+    locked: 0
+  - name: GameSurface
+    uniqueID: 1119904169
+    locked: 0
+  - name: GameItems
+    uniqueID: 2805486573
+    locked: 0
+  - name: GameAnts
+    uniqueID: 2214378113
+    locked: 0
+  - name: GameCarryingItem
+    uniqueID: 2732993785
+    locked: 0
+  - name: GameFront
+    uniqueID: 12289647
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: TitleBackground
+    uniqueID: 40206003
+    locked: 0
+  - name: TitleLogo
+    uniqueID: 3082972381
+    locked: 0

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4211f5826b1a64449bc37c168a48409e, type: 3}
+  m_Name: ColonySetting
+  m_EditorClassIdentifier: 
+  <ColonySize>k__BackingField:
+    Width: 256
+    Height: 160
+  <UnlockDugRatio>k__BackingField: 0.8
+  <SurfaceWidth>k__BackingField: 800
+  <SurfaceDepth>k__BackingField: 10
+  <ItemInfos>k__BackingField:
+    list:
+    - Key: 1
+      Value:
+        <Icons>k__BackingField:
+        - {fileID: 21300000, guid: b72b4a58109b9fd48aade3a7afec251c, type: 3}
+        <Life>k__BackingField: 150
+        <Amount>k__BackingField: 1
+    - Key: 2
+      Value:
+        <Icons>k__BackingField:
+        - {fileID: 21300000, guid: 0d554f5728467334bba71c085cac0951, type: 3}
+        - {fileID: 21300000, guid: b36d7b6f6478353408bbbdfd5afc4359, type: 3}
+        - {fileID: 21300000, guid: 434f78a80b4bf0743ae7102c3e2bd102, type: 3}
+        - {fileID: 21300000, guid: 4fbde178c9976854fb79e52bd98eed8e, type: 3}
+        <Life>k__BackingField: 400
+        <Amount>k__BackingField: 250
+    - Key: 4
+      Value:
+        <Icons>k__BackingField:
+        - {fileID: 21300000, guid: b9a2795ff486e734daca428c6c9947f1, type: 3}
+        <Life>k__BackingField: 300
+        <Amount>k__BackingField: 1
+    - Key: 8
+      Value:
+        <Icons>k__BackingField:
+        - {fileID: 21300000, guid: d0b08e70c0e7cde4baf87caba120eae1, type: 3}
+        <Life>k__BackingField: 150
+        <Amount>k__BackingField: 1
+    - Key: 16
+      Value:
+        <Icons>k__BackingField:
+        - {fileID: 21300000, guid: 6385c4cf56f84094dad673daaecea4e0, type: 3}
+        <Life>k__BackingField: 150
+        <Amount>k__BackingField: 1
+  <Chambers>k__BackingField:
+  - AllowedItems: 02000000
+  - AllowedItems: 04000000
+  - AllowedItems: 0800000010000000
+  - AllowedItems: 02000000
+  - AllowedItems: 04000000
+  - AllowedItems: 0800000010000000
+  - AllowedItems: 
+  - AllowedItems: 02000000
