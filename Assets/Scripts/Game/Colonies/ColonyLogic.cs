@@ -26,7 +26,6 @@ namespace AntColony.Game.Colonies
     {
         [Inject] private readonly OmochBinder binder = null!;
         [Inject] private readonly ColonySetting setting = null!;
-        [Inject] private readonly IObjectResolver resolver = null!;
 
         private ColonyData? data;
         private PathFinder? pathFinder;
@@ -211,7 +210,6 @@ namespace AntColony.Game.Colonies
         public void AddAnt(AntKind kind, float x, float y)
         {
             var ant = new AntLogic(this, kind, x, y);
-            resolver.Inject(ant);
             ant.OnDispose += () => removeAntQueue.Enqueue(ant);
             ants.Add(ant);
 
