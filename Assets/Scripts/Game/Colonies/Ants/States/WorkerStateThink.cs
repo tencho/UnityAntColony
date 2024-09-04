@@ -9,7 +9,7 @@ namespace AntColony.Game.Colonies.Ants.States
     public class WorkerStateThink : OmStateMachine<AntLogic>.State
     {
         // 優先度を重みにして部屋をランダム選択する用
-        private WeightedRandomSelector<ChamberID> randomSelector;
+        private readonly WeightedRandomSelector<ChamberID> randomSelector;
 
         public WorkerStateThink()
         {

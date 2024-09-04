@@ -3,6 +3,7 @@ using Omoch.Display;
 using Omoch.Framework;
 using Omoch.Framework.ButtonGroup;
 using UnityEngine;
+using VContainer;
 
 namespace AntColony.Game.Hud
 {
@@ -11,7 +12,7 @@ namespace AntColony.Game.Hud
         , IHudViewOrder
         , IUpdatableView
     {
-        [SerializeField] private OmochBinder binder;
+        [Inject] private readonly OmochBinder binder = null!;
 
         /// <summary>
         /// 統計数Prefab
@@ -35,18 +36,20 @@ namespace AntColony.Game.Hud
         {
             binder.BindViewWithInput<IHudPeek, IHudViewOrder, HudInput>(this, LinkKey.StatusWindow);
 
-
             buttonGroup = new ButtonGroupView<HudButtonKind>();
-            foreach (HudButtonKind buttonKind in buttons.Keys)
-            {
-                buttonGroup.Add(buttons[buttonKind], buttonKind);
-            }
             binder.BindViewWithInput<
                 IButtonGroupPeek<HudButtonKind>,
                 IButtonGroupViewOrder<HudButtonKind>,
                 ButtonGroupInput<HudButtonKind>
             >(buttonGroup, LinkKey.HudButtonGroup);
+        }
 
+        public override void Initialized()
+        {
+            foreach (HudButtonKind buttonKind in buttons.Keys)
+            {
+                buttonGroup.Add(buttons[buttonKind], buttonKind);
+            }
             speedButton = (HudSpeedButtonView)buttons[HudButtonKind.Speed];
         }
 

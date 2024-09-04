@@ -512,6 +512,7 @@ MonoBehaviour:
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 632562934}
+  - {fileID: 3384577688779063681}
   setting: {fileID: 11400000, guid: 128792c2aece949468da8a70aa85b946, type: 2}
   logicReferences:
     <ColonyRoot>k__BackingField: {fileID: 796184291}
@@ -1420,7 +1421,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad2f82aa5d226c642a95ef13d8ec17f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  binder: {fileID: 632562940}
   statsIcons:
     list:
     - Key: 1

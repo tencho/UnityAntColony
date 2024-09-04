@@ -73,11 +73,14 @@ namespace AntColony.Game.Colonies
             binder.BindLogicWithInput<IColonyPeek, IColonyViewOrder, ColonyInput>(this, LinkKey.Colony);
         }
 
-        public void Begin(ColonyData data)
+        public void SetColonyData(ColonyData data)
         {
             this.data = data;
-
             pathFinder = new PathFinder(data);
+        }
+
+        public void Begin()
+        {
             isBegan = true;
 
             for (int i = 0; i < 50; i++)

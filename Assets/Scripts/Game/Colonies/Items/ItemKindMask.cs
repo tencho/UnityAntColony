@@ -5,7 +5,7 @@ namespace AntColony.Game.Colonies.Items
     /// </summary>
     public struct ItemKindMask
     {
-        private int value;
+        private readonly int value;
         private ItemKindMask(int value) => this.value = value;
 
         public static ItemKindMask Create(params ItemKind[] kinds)

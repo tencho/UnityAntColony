@@ -8,11 +8,11 @@
       "hash": "9057452c86079e4265228480b1439442894d5078"
     },
     "com.omoch.library": {
-      "version": "https://github.com/tencho/UnityOmochLibrary.git#0.0.1",
+      "version": "https://github.com/tencho/UnityOmochLibrary.git?path=Assets/Scripts#0.0.3",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "f1bc63593d4ab84c0632c9f34dd4a2652b551f2a"
+      "hash": "142d30e09254d2ea9503790e249173a16a383430"
     },
     "com.unity.2d.animation": {
       "version": "9.1.1",

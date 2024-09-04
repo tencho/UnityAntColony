@@ -22,7 +22,7 @@ namespace AntColony.Game.Colonies.Ants
         private const float HungryRatio = 0.5f;
         private const float SatietyDecrease = 0.03f;
 
-        private OmStateMachine<AntLogic> stateMachine;
+        private readonly OmStateMachine<AntLogic> stateMachine;
         private int randomSwayAngleCounter;
         private int stamina;
         private int waitFrame;

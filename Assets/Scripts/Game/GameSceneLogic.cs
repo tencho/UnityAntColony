@@ -53,11 +53,13 @@ namespace AntColony.Game
 
             // コロニーデータの非同期生成
             var colonyData = await colonyBuilder.BuildAsync();
-            colony.Begin(colonyData);
+            colony.SetColonyData(colonyData);
 
             // 埋まった通路を最短経路検索しておく
             await colony.PathFinder.FindPathAllAsync(PathFindMode.Shortest);
             await colony.PathFinder.FindPathAllAsync(PathFindMode.Detour);
+
+            colony.Begin();
 
             // 初期化処理完了
             SceneLoader.Instance.SetSceneInitPercent(1f);
