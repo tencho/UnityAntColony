@@ -2,7 +2,7 @@
   "dependencies": {
     "jp.hadashikick.vcontainer": "https://github.com/hadashiA/VContainer.git?path=VContainer/Assets/VContainer#1.16.3",
     "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
-    "com.omoch.library": "https://github.com/tencho/UnityOmochLibrary.git?path=Assets/Scripts#0.0.3",
+    "com.omoch.library": "https://github.com/tencho/UnityOmochLibrary.git?path=Assets/Scripts#0.0.4",
     "com.unity.addressables": "1.21.21",
     "com.unity.collab-proxy": "2.4.4",
     "com.unity.feature.2d": "2.0.1",
