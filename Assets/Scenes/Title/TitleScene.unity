@@ -215,6 +215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <IsStrict>k__BackingField: 0
+  readyLogicCount: 0
+  readyViewCount: 0
 --- !u!1 &300658372
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +558,10 @@ PrefabInstance:
     - target: {fileID: 162129628998646206, guid: 3cea1cce49ab1d64da50a68d986e0f7d, type: 3}
       propertyPath: m_Name
       value: LoadingScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 162129628998646206, guid: 3cea1cce49ab1d64da50a68d986e0f7d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3281100762743810369, guid: 3cea1cce49ab1d64da50a68d986e0f7d, type: 3}
       propertyPath: m_LocalPosition.x
