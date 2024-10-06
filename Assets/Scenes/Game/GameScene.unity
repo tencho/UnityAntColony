@@ -495,6 +495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <IsStrict>k__BackingField: 0
+  readyLogicCount: 0
+  readyViewCount: 0
 --- !u!114 &632562941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1244,6 +1246,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: f20314761d5597842b359a5b262363e8, type: 3}
+    - target: {fileID: 4770401202059668610, guid: 37a22387612198e4e9be8e952afb226b, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9153012743291597781, guid: 37a22387612198e4e9be8e952afb226b, type: 3}
       propertyPath: m_Name
       value: FoodIcon
@@ -1526,6 +1532,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 81eb0e10a19e08440853049f9cc8c22f, type: 3}
+    - target: {fileID: 4770401202059668610, guid: 37a22387612198e4e9be8e952afb226b, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9153012743291597781, guid: 37a22387612198e4e9be8e952afb226b, type: 3}
       propertyPath: m_Name
       value: AntIcon
@@ -1828,9 +1838,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4770401202059668610, guid: 37a22387612198e4e9be8e952afb226b, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770401202059668610, guid: 37a22387612198e4e9be8e952afb226b, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a0019e9fc3cddcd4aa29d99ddac41e6a, type: 3}
+    - target: {fileID: 4770401202059668610, guid: 37a22387612198e4e9be8e952afb226b, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8508327864615657538, guid: 37a22387612198e4e9be8e952afb226b, type: 3}
       propertyPath: icon
       value: 
