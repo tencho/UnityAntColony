@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using AntColony.Game.Colonies.Builders;
 using AntColony.Game.Colonies.Items;
@@ -14,7 +15,7 @@ namespace AntColony.Settings
         [field: SerializeField] public float UnlockDugRatio { get; private set; }
         [field: SerializeField] public float SurfaceWidth { get; private set; }
         [field: SerializeField] public float SurfaceDepth { get; private set; }
-        [field: SerializeField] public SerializableDictionary<ItemKind, ItemInfo> ItemInfos { get; private set; }
+        [field: SerializeField] public SerializableDictionary<ItemKind, ItemSource> ItemInfos { get; private set; }
         [field: SerializeField] public List<ChamberBuildInfo> Chambers { get; private set; }
 
 #if UNITY_EDITOR
@@ -22,36 +23,6 @@ namespace AntColony.Settings
         {
             ColonySize = new(256, 160);
             ItemInfos = new();
-            ItemInfos[ItemKind.Dirt] = new ItemInfo
-            {
-                Icons = new() { null },
-                Life = 150,
-                Amount = 1,
-            };
-            ItemInfos[ItemKind.Food] = new ItemInfo
-            {
-                Icons = new() { null },
-                Life = 400,
-                Amount = 250,
-            };
-            ItemInfos[ItemKind.Egg] = new ItemInfo
-            {
-                Icons = new() { null },
-                Life = 300,
-                Amount = 1,
-            };
-            ItemInfos[ItemKind.Debris] = new ItemInfo
-            {
-                Icons = new() { null },
-                Life = 150,
-                Amount = 1,
-            };
-            ItemInfos[ItemKind.Body] = new ItemInfo
-            {
-                Icons = new() { null },
-                Life = 150,
-                Amount = 1,
-            };
             Chambers = new()
             {
                 new ChamberBuildInfo{ AllowedItems = new(){ ItemKind.Food } },

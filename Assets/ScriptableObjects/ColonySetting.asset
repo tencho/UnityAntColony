@@ -13,46 +13,23 @@ MonoBehaviour:
   m_Name: ColonySetting
   m_EditorClassIdentifier: 
   <ColonySize>k__BackingField:
-    Width: 256
-    Height: 160
+    <Width>k__BackingField: 256
+    <Height>k__BackingField: 160
   <UnlockDugRatio>k__BackingField: 0.8
   <SurfaceWidth>k__BackingField: 800
   <SurfaceDepth>k__BackingField: 10
   <ItemInfos>k__BackingField:
     list:
     - Key: 1
-      Value:
-        <Icons>k__BackingField:
-        - {fileID: 21300000, guid: b72b4a58109b9fd48aade3a7afec251c, type: 3}
-        <Life>k__BackingField: 150
-        <Amount>k__BackingField: 1
+      Value: {fileID: 11400000, guid: db890e0b203a06e4fac56cffe29eee1e, type: 2}
     - Key: 2
-      Value:
-        <Icons>k__BackingField:
-        - {fileID: 21300000, guid: 0d554f5728467334bba71c085cac0951, type: 3}
-        - {fileID: 21300000, guid: b36d7b6f6478353408bbbdfd5afc4359, type: 3}
-        - {fileID: 21300000, guid: 434f78a80b4bf0743ae7102c3e2bd102, type: 3}
-        - {fileID: 21300000, guid: 4fbde178c9976854fb79e52bd98eed8e, type: 3}
-        <Life>k__BackingField: 400
-        <Amount>k__BackingField: 250
+      Value: {fileID: 11400000, guid: afa35976c74d7a442b7582af059c278c, type: 2}
     - Key: 4
-      Value:
-        <Icons>k__BackingField:
-        - {fileID: 21300000, guid: b9a2795ff486e734daca428c6c9947f1, type: 3}
-        <Life>k__BackingField: 300
-        <Amount>k__BackingField: 1
+      Value: {fileID: 11400000, guid: 3e0faa209db761344b19cf3bbd48fcf0, type: 2}
     - Key: 8
-      Value:
-        <Icons>k__BackingField:
-        - {fileID: 21300000, guid: d0b08e70c0e7cde4baf87caba120eae1, type: 3}
-        <Life>k__BackingField: 150
-        <Amount>k__BackingField: 1
+      Value: {fileID: 11400000, guid: 7b39819c7ecd25e4aa0e4ae1c47a21e1, type: 2}
     - Key: 16
-      Value:
-        <Icons>k__BackingField:
-        - {fileID: 21300000, guid: 6385c4cf56f84094dad673daaecea4e0, type: 3}
-        <Life>k__BackingField: 150
-        <Amount>k__BackingField: 1
+      Value: {fileID: 11400000, guid: 737c36d2d3bc1404e994ea3bf680ad63, type: 2}
   <Chambers>k__BackingField:
   - AllowedItems: 02000000
   - AllowedItems: 04000000
