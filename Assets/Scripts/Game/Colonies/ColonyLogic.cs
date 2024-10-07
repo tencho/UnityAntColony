@@ -38,6 +38,7 @@ namespace AntColony.Game.Colonies
         private int time;
         private int antIndexCounter;
         private int itemIndexCounter;
+        private bool colonyInitialized;
 
         public ColonyData Data => data ?? throw new ArgumentNullException();
         public IColonyDataPeek DataPeek => data ?? throw new ArgumentNullException();
@@ -61,6 +62,7 @@ namespace AntColony.Game.Colonies
             time = 0;
             antIndexCounter = 0;
             itemIndexCounter = 0;
+            colonyInitialized = false;
 
             Speed = 1;
             TotalAnts = 0;
@@ -76,6 +78,7 @@ namespace AntColony.Game.Colonies
         public void SetColonyData(ColonyData data)
         {
             this.data = data;
+            colonyInitialized = true;
             pathFinder = new PathFinder(data);
         }
 
@@ -95,6 +98,11 @@ namespace AntColony.Game.Colonies
 
         public void UpdateLogic()
         {
+            if (colonyInitialized)
+            {
+                PathFinder.Update();
+            }
+
             if (!isBegan)
             {
                 return;
@@ -125,9 +133,9 @@ namespace AntColony.Game.Colonies
                 }
 
                 // 定期的に迂回経路を探索する
-                if (time % 120 == 0)
+                if (!PathFinder.IsFinding)
                 {
-                    PathFinder.FindPathAllSafeAsync(PathFindMode.Detour);
+                    PathFinder.FindPathAll(PathFindMode.Detour, true);
                 }
             }
         }

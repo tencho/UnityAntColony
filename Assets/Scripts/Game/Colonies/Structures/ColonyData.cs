@@ -54,7 +54,7 @@ namespace AntColony.Game.Colonies.Structures
         /// </summary>
         public bool TryGetCell(int x, int y, [NotNullWhen(true)] out Cell? cell)
         {
-            if ((uint)x < (uint)Cells.GetLength(0) && (uint)y < (uint)Cells.GetLength(1))
+            if ((uint)x < (uint)Width && (uint)y < (uint)Height)
             {
                 cell = Cells[x, y];
                 return true;

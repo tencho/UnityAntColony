@@ -56,8 +56,8 @@ namespace AntColony.Game
             colony.SetColonyData(colonyData);
 
             // 埋まった通路を最短経路検索しておく
-            await colony.PathFinder.FindPathAllAsync(PathFindMode.Shortest);
-            await colony.PathFinder.FindPathAllAsync(PathFindMode.Detour);
+            await colony.PathFinder.FindPathAllAsync(PathFindMode.Shortest, false);
+            await colony.PathFinder.FindPathAllAsync(PathFindMode.Detour, false);
 
             colony.Begin();
 
